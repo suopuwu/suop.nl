@@ -26,4 +26,26 @@ body, html {
 }
 #nav-bar > span:hover {
   background-color: #1c313a;
+}
+
+.card-holder {
+  display: flex;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+  box-sizing: border-box;
+  border: solid black 1px;
+  padding: 20px;
+}
+@media (orientation: portrait) {
+  .card {
+    flex-grow: 1;
+  }
 }/*# sourceMappingURL=style.css.map */
