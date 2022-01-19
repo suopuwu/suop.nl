@@ -1,0 +1,70 @@
+$background-color: rgb(33, 37, 41)
+
+*
+  margin: 0
+  padding: 0
+
+body, html
+  min-width: 100%
+  min-height: 100vh
+  font-family: sans-serif
+
+body
+  display: flex
+  flex-flow: column
+
+.navbar
+  padding: 10px
+
+.content
+  flex-grow: 1
+  @media (orientation: landscape)
+    width: 80%
+    margin: auto
+
+.dual-box
+  display: flex
+  flex-flow: row wrap
+  max-width: 100%
+  justify-content: center
+  align-items: center
+  > img, h1, span
+    flex-basis: 100%
+    min-width: 0
+    @media (orientation: landscape)
+      flex-basis: 50%
+  > h1
+    padding: 20px
+
+.squisher
+  padding: 10px
+  @media (orientation: landscape)
+    padding: 0 10% 0 10%
+
+p
+  @media (orientation: landscape)
+    font-size: 1.5em
+
+footer
+  box-sizing: border-box
+  text-align: center
+  width: 100%
+  margin-top: 100px
+  padding: 100px
+  background-color: $background-color
+  color: white
+
+// portfolio page
+
+.gallery
+  display: flex
+  flex-flow: row wrap
+  > img
+    flex-basis: 100%
+    min-width: 0
+    @media (orientation: landscape)
+      flex-basis: 33%
+
+//review
+.review > p
+  padding-bottom: 50px
