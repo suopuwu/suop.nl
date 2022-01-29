@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+  <link rel="icon" href="img/icon.gif">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>&lrm;</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    html,
+    body,
+    #body {
+      font-family: 'Oswald', sans-serif;
+      width: 100%;
+      height: 100%;
+      background-color: #212121;
+      overflow: hidden;
+    }
+
+    #body {
+      background-size: cover;
+      background-position: center;
+      transition: all 0.2s;
+      /* bottom: 100%; */
+      display: flex;
+      opacity: 0;
+      flex-flow: column nowrap;
+      justify-content: start;
+      align-items: flex-end;
+      position: relative;
+    }
+
+    #reloj {
+      font-size: 5em;
+
+    }
+
+    #body>div {
+      color: white;
+      padding: 20px;
+      background-color: #21212150;
+      display: inline-flex;
+      margin: 20px;
+      border-radius: 15px;
+
+    }
+
+    .space {
+      flex-grow: 1;
+    }
+
+    .work-setting {
+      font-size: 20px;
+    }
+
+    #w5217 {
+      flex-flow: column;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="body">
+    <div id="reloj"></div>
+    <div id="w5217">
+      <span class="work-settings">
+
+        <span class="work-setting" id="work-time" contenteditable="true">50</span>
+        <span class="work-setting" id="rest-time" contenteditable="true">20</span>
+      </span>
+      <button class="fancy-button begin-working" data-colors="#78909C #37474F" data-height="20px">Work</button>
+    </div>
+  </div>
+  <!--[if lt IE 7]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <script src="jquery-3.6.0.js" type="module"></script>
+  <script src="script.js" type="module"></script>
+</body>
+
+</html>
