@@ -1,0 +1,3 @@
+go to home/suop on the server
+git pull in the repo
+do a cp -r directory/you/want/* destination/directory
